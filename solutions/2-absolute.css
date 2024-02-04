@@ -1,0 +1,16 @@
+:root {
+  --red: #f44336;
+  --green: #4caf50;
+  --blue: #2196f3;
+  --side: 200px;
+}
+
+body {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+}
+
+/* BEGIN (write your solution here) */
+
+/* END */
