@@ -13,8 +13,7 @@ const settings = {
 };
 
 test.describe("Float Layout", () => {
-  test.beforeEach(async ({ page }, testInfo) => {
-    testInfo.snapshotPath = (name) => `${testInfo.file}-snapshots/${name}`;
+  test.beforeEach(async ({ page }) => {
     await page.goto("/5-float.html");
     await page.setViewportSize(settings.viewport);
   });

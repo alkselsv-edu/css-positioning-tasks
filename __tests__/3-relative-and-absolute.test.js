@@ -2,8 +2,7 @@ const { test, expect } = require("@playwright/test");
 
 let page;
 
-test.beforeAll(async ({ browser }, testInfo) => {
-  testInfo.snapshotPath = (name) => `${testInfo.file}-snapshots/${name}`;
+test.beforeAll(async ({ browser }) => {
   page = await browser.newPage();
   await page.goto("/3-relative-and-absolute.html");
 });

@@ -13,8 +13,7 @@ const settings = {
 };
 
 test.describe("Educational Programme Layout", () => {
-  test.beforeEach(async ({ page }, testInfo) => {
-    testInfo.snapshotPath = (name) => `${testInfo.file}-snapshots/${name}`;
+  test.beforeEach(async ({ page }) => {
     await page.goto("/1-relative.html");
     await page.setViewportSize(settings.viewport);
   });

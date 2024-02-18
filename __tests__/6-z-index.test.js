@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.beforeEach(async ({ page }, testInfo) => {
+test.beforeEach(async ({ page }) => {
   await page.goto("/6-z-index.html");
 });
 
